@@ -35,8 +35,10 @@ var BlogPost = mongoose.model('BlogPost', BlogPostSchema);
 var Comment = mongoose.model('Comment', CommentSchema);
 var Image = mongoose.model('Image', ImageSchema);
 
+//
 var banner = new Image({ path : "/images/header-skyline.jpg" });
 console.log(banner.path);
+//banner.save();
 
 // Export the schema and models
 module.exports = {

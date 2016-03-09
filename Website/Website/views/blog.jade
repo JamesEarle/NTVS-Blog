@@ -7,6 +7,4 @@ block content
     .col-md-4
         ul
             each img, i in images
-                li
-                    p Here is a list image
-                    img(src="#{img.path}")= img.path   
+                p #{img.path}

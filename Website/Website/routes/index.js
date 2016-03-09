@@ -37,20 +37,10 @@ exports.blog = function (req, res) {
     
     image.find(function (err, docs) {
         if (err) return console.error(err);
-        console.log("These are the docs");
-        console.log(docs);
+        console.log(docs); // Prints the value we save initially.
         res.render('blog', {
             title : 'Blog',
             images: docs 
         });
     });
-
-    //collection.find({}, {}, function (e, docs) {
-    //    res.render('blog', {
-    //        title : 'Blog',
-    //        images: docs
-    //    });
-    //});
-
-    //res.render('blog', { title: 'Blog' });
 };
