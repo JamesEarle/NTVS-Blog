@@ -1,0 +1,8 @@
+﻿/* Custom Style */
+
+.headline-background {
+	background-image: url('/images/header-skyline.jpg');
+	background-position-y: 35%;
+	background-size: cover;
+	min-height: 350px;
+}
