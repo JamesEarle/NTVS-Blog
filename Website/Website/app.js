@@ -29,7 +29,14 @@ var app = express();
 
 // Make the database visible to the router
 app.use(function (req, res, next) {
-    req.image = schema.Image;
+    req.image = schema.image;
+    
+
+    req.blog = schema.BlogPost;
+    req.comment = schema.Comment;
+
+    //req.db = schema.db;
+    //req.new_image = schema.new_image;
     next();
 });
 
@@ -51,7 +58,7 @@ if ('development' == app.get('env')) {
     app.use(express.errorHandler());
 }
 
-// Add application routes
+// Add GET Requests
 app.get('/', routes.index);
 app.get('/about', routes.about);
 app.get('/work', routes.work);
@@ -59,7 +66,10 @@ app.get('/projects', routes.projects);
 app.get('/extras', routes.extras);
 app.get('/contact', routes.contact);
 app.get('/resume', routes.resume);
-app.get('/blog', routes.blog);
+app.get('/blog', routes.g_blog);
+
+// Add POST Requests
+app.post('/blog', routes.p_blog);
 
 // Start the server
 http.createServer(app).listen(app.get('port'), function () {

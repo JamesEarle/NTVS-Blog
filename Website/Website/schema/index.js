@@ -35,15 +35,28 @@ var BlogPost = mongoose.model('BlogPost', BlogPostSchema);
 var Comment = mongoose.model('Comment', CommentSchema);
 var Image = mongoose.model('Image', ImageSchema);
 
-//
-var banner = new Image({ path : "/images/header-skyline.jpg" });
-console.log(banner.path);
-//banner.save();
+// Create new model instances for post requests to access.
+var new_image = new Image({ path : "" });
 
-// Export the schema and models
+var new_blog = new BlogPost( {
+    author: "James Earle",
+    title: "",
+    body: "",
+    image: "",
+    date: Date.now
+});
+
+var new_comment = new Comment( {
+    name: "",
+    age: 18,
+    bio: "",
+    date: Date.now,
+    buff: Buffer
+});
+
+// Export the schema and model instance
 module.exports = {
-    BlogPost : BlogPost,
-    Comment  : Comment,
-    Image    : Image,
-    db : db
+    image   : new_image,
+    blog    : new_blog,
+    comment : new_comment
 }

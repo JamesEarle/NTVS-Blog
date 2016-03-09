@@ -1,7 +1,6 @@
-﻿
-/*
+﻿/*
  * GET Requests on all pages
- */ 
+ */
 
 exports.index = function (req, res) {
 	res.render('index', { title: 'Express' });
@@ -32,15 +31,24 @@ exports.resume = function (req, res) {
 };
 
 // For the blog, we query MongoDB and return blog posts
-exports.blog = function (req, res) {
+exports.g_blog = function (req, res) {
     var image = req.image;
     
     image.find(function (err, docs) {
         if (err) return console.error(err);
         console.log(docs); // Prints the value we save initially.
-        res.render('blog', {
-            title : 'Blog',
-            images: docs 
-        });
+        res.render('blog', {title : 'Blog'});
     });
+};
+
+/*
+ * POST Requests on all pages
+ */ 
+
+exports.p_blog = function (req, res) {
+    var image = req.image;
+    image.path = req.body.item;
+    image.save();
+
+    res.render('index', { title : 'Express' });
 };
