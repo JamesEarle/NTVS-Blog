@@ -29,14 +29,15 @@ var app = express();
 
 // Make the database visible to the router
 app.use(function (req, res, next) {
-    req.image = schema.image;
+    // Models
+    req.Image = schema.Image
+    req.BlogPost = schema.BlogPost;
+    req.Comment = schema.Comment;
     
-
-    req.blog = schema.BlogPost;
-    req.comment = schema.Comment;
-
-    //req.db = schema.db;
-    //req.new_image = schema.new_image;
+    // Model Instances    
+    req.new_image = schema.new_image;
+    req.new_blog = schema.new_blog
+    req.new_comment = schema.new_comment;
     next();
 });
 

@@ -32,13 +32,22 @@ exports.resume = function (req, res) {
 
 // For the blog, we query MongoDB and return blog posts
 exports.g_blog = function (req, res) {
-    var image = req.image;
-    
+    var image = req.Image;
+
     image.find(function (err, docs) {
         if (err) return console.error(err);
-        console.log(docs); // Prints the value we save initially.
-        res.render('blog', {title : 'Blog'});
+        console.log(docs); // Prints the value we save initially
+        res.render('blog', {
+            title : 'Blog',
+            images: docs
+        });
     });
+
+    //Can also put this code here, but no access to the docs from query.
+    //res.render('blog', {
+    //    title : 'Blog',
+    //    images: docs
+    //});
 };
 
 /*
@@ -46,9 +55,9 @@ exports.g_blog = function (req, res) {
  */ 
 
 exports.p_blog = function (req, res) {
-    var image = req.image;
-    image.path = req.body.item;
-    image.save();
+    var new_image = req.new_image;
+    new_image.path = req.body.item;
+    new_image.save();
 
     res.render('index', { title : 'Express' });
 };

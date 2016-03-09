@@ -54,9 +54,12 @@ var new_comment = new Comment( {
     buff: Buffer
 });
 
-// Export the schema and model instance
+// Export the models and model instances
 module.exports = {
-    image   : new_image,
-    blog    : new_blog,
-    comment : new_comment
+    Image       : Image,
+    BlogPost    : BlogPost,
+    Comment     : Comment,
+    new_image   : new_image,
+    new_blog    : new_blog,
+    new_comment : new_comment
 }
