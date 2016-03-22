@@ -37,10 +37,23 @@ exports.g_blog = function (req, res) {
     image.find(function (err, docs) {
         if (err) return console.error(err);
         console.log(docs); // Prints the value we save initially
-        res.render('blog', {
-            title : 'Blog',
-            images: docs
-        });
+        //res.render('blog', {
+        //    title : 'Blog',
+        //    images: docs
+        //});
+        if (docs.length <= 0) {
+            console.log("No records found");
+            res.render('blog', {
+                title : 'Blog',
+                images: "No Records Found"
+            });
+        } else {
+            res.render('blog', {
+                title : 'Blog',
+                images: docs
+            });
+        }
+
     });
 
     //Can also put this code here, but no access to the docs from query.
