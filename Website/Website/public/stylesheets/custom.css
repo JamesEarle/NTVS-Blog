@@ -1,4 +1,8 @@
-﻿/* Custom Style */
+﻿/* Custom CSS */
+
+hr {
+	border-top: 1px solid #E4E4E4;
+}
 
 .headline-background {
 	background-image: url('/images/header-skyline.jpg');
@@ -19,4 +23,24 @@
 
 .green {
 	background-color: #7CB2A3;
+}
+
+.middle {
+	margin-right: 40%;
+	margin-left: 40%;
+	text-align: center;
+}
+
+.square-md {
+	width: 275px;
+	height: 275px;
+}
+
+.square-sm {
+	width: 250px;
+	height: 250px;
+}
+
+.thin-margins {
+	margin: 10px;
 }
