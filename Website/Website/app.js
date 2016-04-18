@@ -16,26 +16,20 @@ var mysql = require("mysql");
 var connection = mysql.createConnection({
     host : "localhost",
     user : "root",
-    password : "",
+    password : "", //secret
     database : "ntvs_blog"
 });
 
-connection.connect();
-
-//connection.query('SELECT 1 + 1 AS solution', function (err, rows, fields) {
-//    if (err) throw err;
-
-//    console.log("The solution is ", rows[0].solution);
-//});
-
-if (!connection) console.log("Error connecting to MySQL!");
+connection.connect(function (err) {
+    if (err) {
+        console.error("Error connecting to MySQL! " + err.stack);
+        return
+    }
+});
 
 
-//connection.end();
-
-// find application routes
+// Get application routes and begin express
 var routes = require('./routes');
-
 var app = express();
 
 // Make the database visible to the router

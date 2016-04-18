@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Content Include="public\images\ms-logo.png" />
     <Content Include="public\javascripts\additem.js" />
     <Compile Include="routes\index.js" />
   </ItemGroup>

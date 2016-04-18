@@ -1,9 +1,17 @@
 ﻿extends layout
 
 block content
-  h2 #{title}
   .row
-    .col-md-4 Are people going to read my blog?
-    .col-md-4
-        h2 Here is a change
-            
+      h1 #{title}
+      h4.
+        Interested in some of the work I've been up to lately? Check out some of
+        my blog posts here! I'll be updating often with new work, projects, or
+        just expressing my opinion (yikes!)
+
+  hr
+  each p in posts
+    .row
+        .pull-left.col-md-2
+            img(src="images/ms-logo.png", style="width: 140px; height: 140px; margin-top:7.5px;")
+        h2= p.title
+        p= p.body
