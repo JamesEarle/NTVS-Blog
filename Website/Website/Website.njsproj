@@ -85,7 +85,6 @@
     <Content Include="README.md" />
     <Content Include="views\blog.jade" />
     <Content Include="views\contact.jade" />
-    <Content Include="views\about.jade" />
     <Content Include="views\extras.jade" />
     <Content Include="views\index.jade" />
     <Content Include="views\layout.jade" />

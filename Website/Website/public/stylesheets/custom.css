@@ -4,6 +4,10 @@ hr {
 	border-top: 1px solid #E4E4E4;
 }
 
+h1.header {
+	margin-top: 0px;
+}
+
 .headline-background {
 	background-image: url('/images/header-skyline.jpg');
 	background-position-y: 35%;

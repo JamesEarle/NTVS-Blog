@@ -58,7 +58,6 @@ if ('development' == app.get('env')) {
 
 // Add GET Requests
 app.get('/', routes.index);
-app.get('/about', routes.about);
 app.get('/work', routes.work);
 app.get('/projects', routes.projects);
 app.get('/extras', routes.extras);
