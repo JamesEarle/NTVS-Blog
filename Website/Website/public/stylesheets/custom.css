@@ -6,3 +6,17 @@
 	background-size: cover;
 	min-height: 350px;
 }
+
+.bp-img {
+	width: 140px;
+	height: 140px;
+	margin-top: 7%;
+}
+
+.bp-title {
+	margin-top: 10px;
+}
+
+.green {
+	background-color: #7CB2A3;
+}

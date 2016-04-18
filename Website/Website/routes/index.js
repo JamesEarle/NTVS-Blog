@@ -40,7 +40,6 @@ exports.g_blog = function (req, res) {
             title: 'Blog',
             posts: rows
         });
-        console.log("got the posts");         
     });
 };
 

@@ -1,13 +1,10 @@
 extends layout
 
 block content
+  h1 #{title}
   header.header-image
     .headline
         .container.center
             .row
                 .col-md-4
                     h2.header-round James Earle
-                .col-md-4
-                    form(method='post', action='/blog')
-                        input(type='text', placeholder='path', name='item')
-                        button(type='submit').btn.btn-primary.btn-md Add Item

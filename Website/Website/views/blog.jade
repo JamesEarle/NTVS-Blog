@@ -1,17 +1,22 @@
 ﻿extends layout
 
 block content
-  .row
+  .jumbotron
       h1 #{title}
       h4.
-        Interested in some of the work I've been up to lately? Check out some of
-        my blog posts here! I'll be updating often with new work, projects, or
-        just expressing my opinion (yikes!)
+        Here you can check out some of my recent work. I've taken a big
+        interest in Node.js and the MEAN stack in general, so I've been
+        focusing a lot on improving my web skills overall. If you're at 
+        all interested in coffee or wine, I like to write about that as 
+        well! I'll be updating often with new work, projects, or
+        just expressing my opinion (yikes!), so stay tuned. 
 
   hr
   each p in posts
     .row
         .pull-left.col-md-2
-            img(src="images/ms-logo.png", style="width: 140px; height: 140px; margin-top:7.5px;")
-        h2= p.title
+            img(src="images/ms-logo.png").bp-img
+        h2.bp-title= p.title
         p= p.body
+        // be sure to only show a preview of each post, and then click for more detail
+    hr
