@@ -32,35 +32,16 @@ exports.resume = function (req, res) {
 
 // For the blog, we query MongoDB and return blog posts
 exports.g_blog = function (req, res) {
-    var image = req.Image;
-
-    image.find(function (err, docs) {
-        if (err) return console.error(err);
-        console.log(docs); // Prints the value we save initially
-        //res.render('blog', {
-        //    title : 'Blog',
-        //    images: docs
-        //});
-        if (docs.length <= 0) {
-            console.log("No records found");
-            res.render('blog', {
-                title : 'Blog',
-                images: "No Records Found"
-            });
-        } else {
-            res.render('blog', {
-                title : 'Blog',
-                images: docs
-            });
-        }
-
+    
+    var rows = req.connection.query("SELECT * FROM posts", function (err, rows, fields) {
+        if (err) throw err
+        
+        res.render('blog', {
+            title: 'Blog',
+            posts: rows
+        });
+        console.log("got the posts");         
     });
-
-    //Can also put this code here, but no access to the docs from query.
-    //res.render('blog', {
-    //    title : 'Blog',
-    //    images: docs
-    //});
 };
 
 /*

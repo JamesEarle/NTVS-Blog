@@ -11,16 +11,27 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-// DB Requires
-var mongo = require('mongodb');
+var mysql = require("mysql");
 
-// This connection is refused until we run the MongoDB daemon
-// in the background. Do this using the below command
-// 'mongod --dbpath /d/Development/NodeJS/NTVS/Blog/Blog/data'
+var connection = mysql.createConnection({
+    host : "localhost",
+    user : "root",
+    password : "",
+    database : "ntvs_blog"
+});
 
-// Be sure to require the MongoDB Schema
-var schema = require('./schema/');
-var db = schema.db;
+connection.connect();
+
+//connection.query('SELECT 1 + 1 AS solution', function (err, rows, fields) {
+//    if (err) throw err;
+
+//    console.log("The solution is ", rows[0].solution);
+//});
+
+if (!connection) console.log("Error connecting to MySQL!");
+
+
+//connection.end();
 
 // find application routes
 var routes = require('./routes');
@@ -29,15 +40,7 @@ var app = express();
 
 // Make the database visible to the router
 app.use(function (req, res, next) {
-    // Models
-    req.Image = schema.Image
-    req.BlogPost = schema.BlogPost;
-    req.Comment = schema.Comment;
-    
-    // Model Instances    
-    req.new_image = schema.new_image;
-    req.new_blog = schema.new_blog
-    req.new_comment = schema.new_comment;
+    req.connection = connection;
     next();
 });
 
