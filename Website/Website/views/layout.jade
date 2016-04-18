@@ -7,7 +7,11 @@ html
     link(rel='stylesheet', type='text/css', href='/stylesheets/bootstrap.min.css')
     link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
     link(rel='stylesheet', type='text/css', href='/stylesheets/custom.css')
+    script(src='/javascripts/jquery-1.10.2.js')
+    script(src='/javascripts/bootstrap.js')
+    script(src='/javascripts/respond.js')
     script(src='/javascripts/modernizr-2.6.2.js')
+    script(src='/javascripts/freewall.js')
   body
     .navbar.navbar-inverse.navbar-fixed-top
       .container
@@ -20,8 +24,6 @@ html
         .navbar-collapse.collapse
           ul.nav.navbar-nav
             li
-              a(href="/about") About
-            li
               a(href="/work") Recent Work
             li
               a(href="/projects") Projects
@@ -32,6 +34,8 @@ html
             li
               a(href="/resume") Resume
             li
+              a(href="/photos") Photos
+            li
               a(href="/blog") Blog
     div.jumbotron.headline-background
         .center
@@ -41,9 +45,3 @@ html
       //hr
       footer.middle
         p &copy; 2016 - James Earle
-
-    script(src='/javascripts/jquery-1.10.2.js')
-    script(src='/javascripts/bootstrap.js')
-    script(src='/javascripts/respond.js')
-
-    block scripts

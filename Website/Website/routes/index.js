@@ -3,8 +3,12 @@
  */
 
 exports.index = function (req, res) {
-	res.render('index', { title: 'Express' });
+	res.render('index');
 };
+
+exports.photos = function (req, res) {
+    res.render('photos');
+}
 
 exports.work = function (req, res) {
     res.render('work', { title: 'Work Experience' });
