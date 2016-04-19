@@ -24,19 +24,36 @@ block content
    script.
      
      function mOver(e, cond) {
+        // Easier to deal with jQuery object
+        var elem = $(e);
         if(cond) {
-            $(e).siblings().eq(0).css("filter", "blur(2.5px)");
+            // Chrome, Opera, Safari
+            $(e).siblings().eq(0).css({
+                "-webkit-filter" : "blur(2.5px)",
+                "filter" : "blur(2.5px)"
+            });
         } else {
-            $(e).children().eq(1).css("filter", "blur(2.5px)");
+            $(e).children().eq(1).css({
+                "-webkit-filter" : "blur(2.5px)",
+                "filter" : "blur(2.5px)"
+            });
+
             $(e).children().eq(0).css("display", "inline");
         }
      }
 
      function mOut(e, cond) {
         if(cond) {
-            $(e).siblings().eq(0).css("filter", "blur(0px)");
+            $(e).siblings().eq(0).css({
+                "-webkit-filter" : "blur(0px)",
+                "filter" : "blur(0px)"
+            });
         } else {
-            $(e).children().eq(1).css("filter", "blur(0px)");
+            $(e).children().eq(1).css({
+                "-webkit-filter" : "blur(0px)",
+                "filter" : "blur(0px)"
+            });
+            
             $(e).children().eq(0).css("display", "none");
         }
      }

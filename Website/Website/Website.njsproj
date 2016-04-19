@@ -34,8 +34,6 @@
     <Content Include="public\images\ms-logo.png" />
     <Content Include="public\images\portrait-350x350.jpg" />
     <Content Include="public\javascripts\additem.js" />
-    <Content Include="public\javascripts\init-freewall.js" />
-    <Content Include="public\javascripts\freewall.js" />
     <Content Include="public\javascripts\masonry.pkgd.min.js" />
     <Compile Include="routes\index.js" />
   </ItemGroup>
