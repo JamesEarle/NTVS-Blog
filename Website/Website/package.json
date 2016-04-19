@@ -13,6 +13,7 @@
     "debug": "~2.2.0",
     "express": "3.4.4",
     "jade": "*",
+    "masonry-layout": "^4.0.0",
     "morgan": "~1.5.3",
     "mysql": "^2.10.2",
     "serve-favicon": "~2.2.1",

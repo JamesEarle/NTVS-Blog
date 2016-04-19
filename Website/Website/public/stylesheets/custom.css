@@ -54,6 +54,21 @@ h1.header {
 	margin: 20px;
 }
 
+.grid-item {
+	max-width: 380px;
+	max-height: 380px;
+}
+
+.grid-item > img {
+	max-width: 380px;
+	max-height: 380px;
+}
+
+.grid-item > span {
+	height: 380px;
+	width: 380px;
+}
+
 .shadow {
     -webkit-box-shadow: 0px 0px 3px 2px #777777;
     -moz-box-shadow:    0px 0px 3px 2px #777777;

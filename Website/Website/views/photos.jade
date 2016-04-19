@@ -1,15 +1,36 @@
 ﻿extends layout
 
 block content
-   script(src='/javascripts/init-freewall.js')
-   #freewall-container
-     .item Words
-     .item More Words
-     .item Words
-     .item More Words item Words
-     .item More Words
-     .item Words
-     .item More Words even more though
-     .item this time an image?!
+   //script(src='/javascripts/init-freewall.js')
+   .grid
+     .grid-item(onmouseover="mOver(this)", onmouseout="mOut(this)")
+        span(style="display:none;") DeltaHacks II - 2016
+        img(src="/images/grid/deltahacks-640x640.png")
+     .grid-item
+        img(src="/images/grid/acm-team.jpg")
+     .grid-item
+        img(src="/images/grid/brock-cloud-camp.jpg")
+     .grid-item
+        img(src="/images/grid/explore-certificates.jpg")
+     .grid-item
+        img(src="/images/grid/microsoft-hq.jpg")
+     .grid-item
+        img(src="/images/grid/msp-event.jpg")
+     .grid-item
+        img(src="/images/grid/techready-flag.jpg")
+     .grid-item
+        img(src="/images/grid/ucosp.jpg")
+   script.
+     
+     function mOver(e) {
+        $(e).children().eq(0).css("display", "inline");
+     }
 
-//http://vnjs.net/www/project/freewall/
+     function mOut(e) {
+        $(e).children().eq(0).css("display", "none");
+     }
+
+     // Format the masonry grid. 
+     $('.grid').masonry({
+        itemSelector: '.grid-item'
+     });
