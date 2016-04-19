@@ -55,18 +55,36 @@ h1.header {
 }
 
 .grid-item {
-	max-width: 380px;
-	max-height: 380px;
+	max-width: 374px;
+	max-height: 374px;
+	margin: 2px;
 }
 
 .grid-item > img {
-	max-width: 380px;
-	max-height: 380px;
+	max-width: 374px;
+	max-height: 374px;
 }
 
-.grid-item > span {
-	height: 380px;
-	width: 380px;
+/*.grid-item > img:hover {
+	filter: blur(3px);
+}*/
+
+.grid-item > .textbox {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	font-size: 20px;
+	color: white;
+	/* RGB for browsers that do not support RGBA */
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.3);
+
+	border-radius:10px;
+}
+
+.textbox > span {
+	padding: 4px;
 }
 
 .shadow {
