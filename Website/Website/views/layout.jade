@@ -12,7 +12,8 @@ html
     script(src='/javascripts/respond.js')
     script(src='/javascripts/modernizr-2.6.2.js')
     //script(src='/javascripts/freewall.js')
-    script(src="/javascripts/masonry.pkgd.min.js")
+    //script(src="/javascripts/masonry.pkgd.min.js")
+    script(src="/javascripts/jquery.montage.min.js")
   body
     .navbar.navbar-inverse.navbar-fixed-top
       .container
@@ -43,6 +44,7 @@ html
             img(src="images/je-logo-transparent.png").middle
     .container.body-content
       block content
+    block grid
       //hr
       footer.middle
         p &copy; 2016 - James Earle

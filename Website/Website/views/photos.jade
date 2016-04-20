@@ -1,64 +1,15 @@
 ﻿extends layout
 
-block content
-   //script(src='/javascripts/init-freewall.js')
-   .grid
-     .grid-item(onmouseover="mOver(this)", onmouseout="mOut(this)")
+block grid
+  .grid-container
+    .am-container#am-container
+      - var n=0
+      while n<42
+        a(href="#")
+          img(src="/images/grid/#{n++}.jpg")
+  script(src="/javascripts/automatic-montage.js")
+
+//.grid-item(onmouseover="mOver(this)", onmouseout="mOut(this)")
         .textbox(onmouseover="mOver(this, true)", onmouseout="mOut(this, true)")
             span DeltaHacks II - 2016
-        img(src="/images/grid/deltahacks-640x640.png")
-     .grid-item
-        img(src="/images/grid/acm-team.jpg")
-     .grid-item
-        img(src="/images/grid/brock-cloud-camp.jpg")
-     .grid-item
-        img(src="/images/grid/explore-certificates.jpg")
-     .grid-item
-        img(src="/images/grid/microsoft-hq.jpg")
-     .grid-item
-        img(src="/images/grid/msp-event.jpg")
-     .grid-item
-        img(src="/images/grid/techready-flag.jpg")
-     .grid-item
-        img(src="/images/grid/ucosp.jpg")
-   script.
-     
-     function mOver(e, cond) {
-        // Easier to deal with jQuery object
-        var elem = $(e);
-        if(cond) {
-            // Chrome, Opera, Safari
-            $(e).siblings().eq(0).css({
-                "-webkit-filter" : "blur(2.5px)",
-                "filter" : "blur(2.5px)"
-            });
-        } else {
-            $(e).children().eq(1).css({
-                "-webkit-filter" : "blur(2.5px)",
-                "filter" : "blur(2.5px)"
-            });
-
-            $(e).children().eq(0).css("display", "inline");
-        }
-     }
-
-     function mOut(e, cond) {
-        if(cond) {
-            $(e).siblings().eq(0).css({
-                "-webkit-filter" : "blur(0px)",
-                "filter" : "blur(0px)"
-            });
-        } else {
-            $(e).children().eq(1).css({
-                "-webkit-filter" : "blur(0px)",
-                "filter" : "blur(0px)"
-            });
-            
-            $(e).children().eq(0).css("display", "none");
-        }
-     }
-
-     // Format the masonry grid. 
-     $('.grid').masonry({
-        itemSelector: '.grid-item'
-     });
+        img(src="/images/grid/.png")

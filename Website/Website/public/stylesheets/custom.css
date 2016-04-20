@@ -54,16 +54,21 @@ h1.header {
 	margin: 20px;
 }
 
+.grid-container {
+	margin-left:10%;
+	margin-right:10%;
+	background-color: #E4E4E4;
+}
+
 .grid-item {
-	max-width: 374px;
-	max-height: 374px;
+	max-width: 332px;
+	max-height: 332px;
 	margin: 2px;
 }
 
-.grid-item > img {
-	max-width: 374px;
-	max-height: 374px;
-	/*position:relative;*/
+#am-container > a > img {
+	position:relative;
+	/*margin: 3px;*/
 	z-index:0;
 }
 
