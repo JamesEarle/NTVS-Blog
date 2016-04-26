@@ -15,56 +15,5 @@ html
     //script(src="/javascripts/masonry.pkgd.min.js")
     script(src="/javascripts/jquery.montage.min.js")
   body
-    //.navbar.navbar-inverse.navbar-fixed-top
-      .container
-        .navbar-header
-          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand(href='/') James Earle
-        .navbar-collapse.collapse
-          ul.nav.navbar-nav
-            li
-              a(href="/work") Recent Work
-            li
-              a(href="/projects") Projects
-            li
-              a(href="/extras") Extras
-            li
-              a(href="/contact") Contact
-            li
-              a(href="/resume") Resume
-            li
-              a(href="/photos") Photos
-            li
-              a(href="/blog") Blog
-    div.headline-background
-        .center
-            img(src="images/je-logo-transparent.png").middle
-            .info-container
-                .info
-                    h1 James Earle
-                    ul
-                        li
-                          a(href="/about") About
-                        li
-                          a(href="/work") Recent Work
-                        li
-                          a(href="/projects") Projects
-                        li
-                          a(href="/extras") Extras
-                        li
-                          a(href="/contact") Contact
-                        li
-                          a(href="/resume") Resume
-                        li
-                          a(href="/photos") Photos
-                        li
-                          a(href="/blog") Blog
-    .container.body-content
-      block content
-    block grid
-      //hr
-      footer.middle
-        p &copy; 2016 - James Earle
+    block content
+    //block grid

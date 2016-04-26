@@ -84,6 +84,7 @@
     <Content Include="public\stylesheets\style.css" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
+    <Content Include="views\about.jade" />
     <Content Include="views\blog.jade" />
     <Content Include="views\contact.jade" />
     <Content Include="views\extras.jade" />

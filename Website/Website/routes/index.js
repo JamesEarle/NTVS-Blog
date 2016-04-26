@@ -10,6 +10,10 @@ exports.photos = function (req, res) {
     res.render('photos');
 }
 
+exports.about = function (req, res) {
+    res.render('about');
+}
+
 exports.work = function (req, res) {
     res.render('work', { title: 'Work Experience' });
 };
