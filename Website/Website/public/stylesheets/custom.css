@@ -117,6 +117,12 @@ h1.header {
 	margin: 20px;
 }
 
+.grid {
+	display:flex;
+	margin-bottom: 8px;
+	margin-right: 8px;
+}
+
 .grid-container {
 	margin-left:10%;
 	margin-right:10%;

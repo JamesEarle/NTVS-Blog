@@ -5,9 +5,10 @@ block grid
     .am-container#am-container
       - var n=0
       while n<42
-        a(href="#")
-          img(src="/images/grid/#{n++}.jpg")
-  script(src="/javascripts/automatic-montage.js")
+        a(href="#").grid
+          figure
+            img(src="/images/grid/#{n++}.jpg").square-md
+  //script(src="/javascripts/automatic-montage.js")
 
 //.grid-item(onmouseover="mOver(this)", onmouseout="mOut(this)")
         .textbox(onmouseover="mOver(this, true)", onmouseout="mOut(this, true)")
