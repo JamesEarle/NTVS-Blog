@@ -15,7 +15,7 @@ html
     //script(src="/javascripts/masonry.pkgd.min.js")
     script(src="/javascripts/jquery.montage.min.js")
   body
-    .navbar.navbar-inverse.navbar-fixed-top
+    //.navbar.navbar-inverse.navbar-fixed-top
       .container
         .navbar-header
           button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
@@ -39,9 +39,11 @@ html
               a(href="/photos") Photos
             li
               a(href="/blog") Blog
-    div.jumbotron.headline-background
+    div.headline-background
         .center
             img(src="images/je-logo-transparent.png").middle
+            //div.prompt-container
+                img(src="images/down-arrow-b.png").prompt
     .container.body-content
       block content
     block grid
