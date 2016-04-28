@@ -4,21 +4,11 @@ body {
 	padding: 0px;
 }
 
-a:hover {
-	/*animation: underline 3s ease-in-out;*/
-	/*animation: underline 3s infinite;
-	position: relative;*/
-}
-
-/*a:link, a:hover,
+a:link, a:hover,
 a:visited, a:active {
 	text-decoration: none;
 	color: white;
-}*/
-
-/*
-	From Tutorial
-*/
+}
 
 a {
 	position: relative;
@@ -33,6 +23,7 @@ a:hover {
 
 a:hover:before {
 	visibility: visible;
+	-ms-transform: scaleX(1);
 	-webkit-transform: scaleX(1);
 	transform: scaleX(1);
 }
@@ -47,29 +38,32 @@ a:before {
   left: 0;
   background-color: white;
   visibility: hidden;
+  -ms-transform: scaleX(0);
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.15s ease-in-out 0s;
+  -webkit-transition: all 0.15s ease-in-out 0s;
+  transition: all 0.15s ease-in-out 0s;
 }
 
-/********************/
+ul.options {
+	margin-left: -40px;
+}
 
 ul, li {
 	text-decoration:none;
 	list-style-type: none;
-	margin-left:-20px;
 	margin-bottom: 3px;
 	margin-top: 3px;
+}
+
+hr {
+	border-top: 1px solid #E4E4E4;
 }
 
 .center {
 	height: 100vh;
 	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
-}
-
-hr {
-	border-top: 1px solid #E4E4E4;
 }
 
 .nothing {
@@ -113,9 +107,9 @@ h1.header {
 }
 
 .headline-background {
-	background-image: url('/images/header-skyline.jpg');
 	background-attachment: fixed;
 	background-position-y: 35%;
+	background-image: url('/images/header-skyline.jpg');
 	background-size: cover;
 	min-height: 350px;
 	height: 100vh;
@@ -137,9 +131,7 @@ h1.header {
 }
 
 .middle {
-	margin-top: 10%;
-	margin-right: 40%;
-	margin-left: 40%;
+	margin-top: 150px;
 	text-align: center;
 }
 
@@ -212,16 +204,4 @@ h1.header {
     -webkit-box-shadow: 0px 0px 3px 2px #777777;
     -moz-box-shadow:    0px 0px 3px 2px #777777;
     box-shadow:         0px 0px 3px 2px #777777;
-}
-
-/* Animations */
-
-@keyframes underline {
-	0% {
-		text-decoration: none;
-	}
-
-	100% {
-		text-decoration: underline;
-	}
 }
