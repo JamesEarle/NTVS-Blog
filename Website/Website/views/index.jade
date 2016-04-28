@@ -1,7 +1,7 @@
 ﻿extends layout
 
 block content
-  .headline-background.skyline
+   .headline-background.skyline
      .overlay
         .info-container
             img(src="images/je-logo-transparent.png").middle
@@ -26,6 +26,27 @@ block content
                         a(href="/photos") Photos
                     li
                         a(href="/blog") Blog
-  .headline-background.brock
-    .overlay-inv
+   .headline-background-sm.brock
+     .overlay-half-down
+     .overlay-half-up
+   .headline-background-sm.microsoft
+     .overlay-half-down
+     span#microsoft Microsoft
+     .overlay-half-up
+
+    //.top-padding
+        .container
+            .thin-margins.square-md.pull-right
+                img(src="images/portrait-350x350.jpg").img-circle.square-lg.shadow
+            h1.header About <span class="text-muted">me &raquo;</span>
+            p.lead.
+                I'm a Technical Evangelist with Microsoft, based out of Los Angeles, 
+                California. A recent grad at Brock University, St. Catharines ON, Canada,
+                with a BSc. Computer Science & Economics, concentration in Software Engineering.
+            p.lead.
+                My interests focus predominantly on web and mobile development, as well
+                as artificial intelligence and machine learning. I like to toy with IoT 
+                applications as well, but regularly find myself coming back to Node.js.
+                Outside of technology my passions are widespread, also being an avid musician and 
+                coffee enthusiast.
      

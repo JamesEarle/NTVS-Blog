@@ -81,12 +81,7 @@ hr {
 	border: 1px solid black;
 }
 
-.continue {
-	/*margin-top: -20px;*/
-	height: 100vh;
-	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
-	background-attachment: fixed;
-	background-size: cover;
+.container {
 }
 
 .head {
@@ -95,10 +90,6 @@ hr {
 	padding-bottom: 10px;
 	background: black;
 }
-
-/*h1.header {
-	margin: 0px;
-}*/
 
 .info-container {
 	text-align: center;
@@ -110,56 +101,55 @@ hr {
 	margin: 0 auto;
 }
 
-/*.prompt-container {
-	height: auto;
-	width: auto;
-	position: relative;
-	margin-top: 14%;
-}*/
-/* pretty much got rid of the prompt. Better outline this way.*/
-/*.prompt {
-	max-height:80px;
-	max-width: 80px;
-	border-radius: 50%;
-	padding:10px;
-}*/
-
 .skyline {
-	background-position-y: 35%;
+	/*background-position-y: 35%;*/
 	background-image: url('/images/header-skyline.jpg');
 }
 
 .brock {
-	background-position-y: 35%;
+	/*background-position-y: 35%;*/
 	background-image: url('/images/header-brock.jpg');
+}
+
+.microsoft {
+	background-image: url('/images/header-microsoft.jpg');
 }
 
 .headline-background {
 	background-attachment: fixed;
 	background-size: cover;
-	height: 120vh;
-	text-align: center;
+	height: 100vh;
+	text-align: left;
 }
 
 /* this will be a banner-style of skyline, for blogs only */
 .headline-background-sm {
 	background-attachment: fixed;
 	background-size: cover;
-	max-height: 100px;
-	text-align: center;
+	height: 200vh;
+	text-align: left;
 }
 
 /*http://stackoverflow.com/questions/21624014/css-are-view-height-vh-and-view-width-vw-units-widely-supported
 	should us jQuery for safety regarding vh unit
 */
 .overlay {
-	height: 120vh;
+	height: 100vh;
 	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
 }
 
-.overlay-inv {
-	height: 120vh;
+.overlay-half-down {
+	height: 100vh;
 	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.overlay-half-up {
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+}
+
+.top-padding {
+	padding-top: 500px;
 }
 
 .bp-img {
@@ -199,56 +189,6 @@ hr {
 .thin-margins {
 	margin: 20px;
 }
-
-/*.grid {
-	display:flex;
-	margin-bottom: 8px;
-	margin-right: 8px;
-}
-
-.grid-container {
-	margin-left:10%;
-	margin-right:10%;
-	background-color: #E4E4E4;
-}
-
-.grid-item {
-	max-width: 332px;
-	max-height: 332px;
-	margin: 2px;
-}
-
-#am-container > a > img {
-	position:relative;
-	z-index:0;
-}*/
-
-/*.grid-item > img:hover {
-	filter: blur(3px);
-}*/
-
-/*.grid-item > .textbox {
-	display: none;
-	position: absolute;
-	top: 50%;
-	left: 25%;
-	font-size: 20px;
-	color: white;
-	background-color: rgb(0, 0, 0);
-	background-color: rgba(0, 0, 0, 0.3);
-	border-radius:10px;
-	z-index:1;
-}
-
-.textbox > span {
-	padding: 4px;
-}
-
-.shadow {
-    -webkit-box-shadow: 0px 0px 3px 2px #777777;
-    -moz-box-shadow:    0px 0px 3px 2px #777777;
-    box-shadow:         0px 0px 3px 2px #777777;
-}*/
 
 @media screen and (max-height: 755px) {
 	.middle {
