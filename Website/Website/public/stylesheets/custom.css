@@ -114,6 +114,15 @@ h1.header {
 	text-align: center;
 }
 
+.headline-background-sm {
+	background-attachment: fixed;
+	background-position-y: 35%;
+	background-image: url('/images/header-skyline.jpg');
+	background-size: cover;
+	max-height: 100px;
+	text-align: center;
+}
+
 .bp-img {
 	width: 140px;
 	height: 140px;
