@@ -9,7 +9,7 @@ body {
 	padding: 0px;
 	text-align: left;
 	color: white;
-	font-weight: lighter;
+	font-weight: normal;
 	letter-spacing: 5px;
 }
 
@@ -86,8 +86,19 @@ hr {
 }
 
 .container {
-	background: rgba(200, 200, 200, 0.9);
+	/*background: rgba(200, 200, 200, 0.9);*/
 	border-radius: 25px;
+	/*border: 5px solid rgba(178, 98, 75, 0.15);*/
+}
+
+.container-full {
+	width: 100%;
+	background: white;
+	color: #374C59;
+	padding: 0;
+	margin: 0;
+	min-height: 400px;
+	z-index: 2;
 }
 
 .head {
@@ -130,7 +141,7 @@ hr {
 .headline-background-sm {
 	background-attachment: fixed;
 	background-size: cover;
-	height: 100vh;
+	height: 200vh;
 	text-align: left;
 }
 
@@ -140,17 +151,18 @@ hr {
 }
 
 .overlay-half-down {
-	height: 50vh;
+	height: 100vh;
 	/*background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));*/
 }
 
 .overlay-half-up {
-	height: 50vh;
+	height: 100vh;
 	/*background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));*/
 }
 
 .top-padding {
-	padding-top: 15%;
+	/*padding-top: 15%;*/
+	padding-top: 40%;
 }
 
 .bp-img {
