@@ -13,12 +13,12 @@ $(document).ready(function () {
         ".headline-background-sm"
     ];
 
-    for (var key in cssSelectors) {
-        if (cssSelectors[key] === ".headline-background-sm") {
-            $(cssSelectors[key]).css("height", 2 * height);
-        } else {
-            $(cssSelectors[key]).css("height", height);
-        }
-    }
+    //for (var key in cssSelectors) {
+    //    if (cssSelectors[key] === ".headline-background-sm") {
+    //        $(cssSelectors[key]).css("height", 2 * height);
+    //    } else {
+    //        $(cssSelectors[key]).css("height", height);
+    //    }
+    //}
 
 });
