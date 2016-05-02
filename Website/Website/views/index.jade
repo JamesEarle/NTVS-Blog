@@ -4,16 +4,17 @@ block content
    .headline-background.skyline
      .overlay
         .info-container
+            span#james.invisible
             img(src="images/je-logo-transparent.png").middle
         .info-container
             .info
                 h1 
-                    a(href="/") James Earle
+                    a(href="#james").scroll James Earle
                 ul.options
                     li
-                        a(href="/about") About
+                        a(href="#about").scroll About
                     li
-                        a(href="/work") Work
+                        a(href="#work").scroll Work
                     li
                         a(href="/projects") Projects
                     li
@@ -28,25 +29,25 @@ block content
                         a(href="/blog") Blog
    .headline-background-sm.brock
      .overlay-half-down
+        .top-padding
+            span#about
+            .container
+                .thin-margins.square-md.pull-right
+                    img(src="images/portrait-350x350.jpg").img-circle.square-lg.shadow
+                h1.header About <span class="text-muted">me &raquo;</span>
+                p.lead.
+                    I'm a Technical Evangelist with Microsoft, based out of Los Angeles, 
+                    California. A recent grad at Brock University, St. Catharines ON, Canada,
+                    with a BSc. Computer Science & Economics, concentration in Software Engineering.
+                p.lead.
+                    My interests focus predominantly on web and mobile development, as well
+                    as artificial intelligence and machine learning. I like to toy with IoT 
+                    applications as well, but regularly find myself coming back to Node.js.
+                    Outside of technology my passions are widespread, also being an avid musician and 
+                    coffee enthusiast.
      .overlay-half-up
    .headline-background-sm.microsoft
      .overlay-half-down
-     span#microsoft Microsoft
+     span#work Microsoft
      .overlay-half-up
-
-    //.top-padding
-        .container
-            .thin-margins.square-md.pull-right
-                img(src="images/portrait-350x350.jpg").img-circle.square-lg.shadow
-            h1.header About <span class="text-muted">me &raquo;</span>
-            p.lead.
-                I'm a Technical Evangelist with Microsoft, based out of Los Angeles, 
-                California. A recent grad at Brock University, St. Catharines ON, Canada,
-                with a BSc. Computer Science & Economics, concentration in Software Engineering.
-            p.lead.
-                My interests focus predominantly on web and mobile development, as well
-                as artificial intelligence and machine learning. I like to toy with IoT 
-                applications as well, but regularly find myself coming back to Node.js.
-                Outside of technology my passions are widespread, also being an avid musician and 
-                coffee enthusiast.
      
