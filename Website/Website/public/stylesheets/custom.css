@@ -147,17 +147,17 @@ hr {
 
 .overlay {
 	height: 100vh;
-	/*background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));*/
+	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
 }
 
 .overlay-half-down {
 	height: 100vh;
-	/*background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));*/
+	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
 .overlay-half-up {
 	height: 100vh;
-	/*background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));*/
+	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
 }
 
 .top-padding {

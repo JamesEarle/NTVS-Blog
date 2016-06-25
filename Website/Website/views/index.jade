@@ -5,6 +5,17 @@
 // fixed in place
 
 block content
+   script.
+     /*$("a").on("click", function() {
+        $("#test").animate({
+            opacity : 0.1,
+            right : "+=100",
+            color : red
+        }, 2000, function() { console.log("complete"); });
+     });*/
+     //$("img").click(function() { $("img").animate({opacity : 0.1}, 2000); });
+     // the above works.
+
    .headline-background.skyline
      .overlay
         .info-container
@@ -13,12 +24,12 @@ block content
         .info-container
             .info
                 h1 
-                    a(href="#james").scroll James Earle
+                    a(href="#james")#test James Earle
                 ul.options
                     li
-                        a(href="#about").scroll About
+                        a(href="#about") About
                     li
-                        a(href="#work").scroll Work
+                        a(href="#work") Work
                     li
                         a(href="/projects") Projects
                     li
@@ -31,7 +42,7 @@ block content
                         a(href="/photos") Photos
                     li
                         a(href="/blog") Blog
-   .container-full
+   //.container-full
       .container
         .thin-margins.square-md.pull-right
             img(src="images/portrait-350x350.jpg").img-circle.square-lg.shadow
@@ -46,7 +57,7 @@ block content
             applications as well, but regularly find myself coming back to Node.js.
             Outside of technology my passions are widespread, also being an avid musician and 
             coffee enthusiast.
-   .headline-background-sm.brock
+   //.headline-background-sm.brock
      .overlay-half-down
         .top-padding
             span#about
@@ -65,7 +76,7 @@ block content
                     Outside of technology my passions are widespread, also being an avid musician and 
                     coffee enthusiast.
      .overlay-half-up
-   .headline-background-sm.microsoft
+   //.headline-background-sm.microsoft
      .overlay-half-down
      span#work Microsoft
      .overlay-half-up

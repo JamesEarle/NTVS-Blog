@@ -34,7 +34,7 @@ exports.resume = function (req, res) {
     res.render('resume', { title: 'Resume' });
 };
 
-// For the blog, we query MongoDB and return blog posts
+// For the blog, we query MySQL and return blog posts
 exports.g_blog = function (req, res) {
     
     var rows = req.connection.query("SELECT * FROM posts", function (err, rows, fields) {
