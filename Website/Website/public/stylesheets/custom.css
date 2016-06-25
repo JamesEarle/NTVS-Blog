@@ -93,7 +93,7 @@ hr {
 
 .container-full {
 	width: 100%;
-	background: white;
+	background-color: #e0e0e0;
 	color: #374C59;
 	padding: 0;
 	margin: 0;
@@ -135,14 +135,16 @@ hr {
 	background-size: cover;
 	height: 100vh;
 	text-align: left;
+	z-index: 0;
 }
 
 /* this will be a banner-style of skyline, for blogs only */
-.headline-background-sm {
+.headline-background-lg { /*these two are the same*/
 	background-attachment: fixed;
 	background-size: cover;
-	height: 200vh;
+	height: 142.5vh;
 	text-align: left;
+	z-index: 0;
 }
 
 .overlay {
@@ -151,18 +153,21 @@ hr {
 }
 
 .overlay-half-down {
-	height: 100vh;
+	height: 50vh;
 	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
 .overlay-half-up {
-	height: 100vh;
-	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+	height: 50vh;
+	/*background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));*/
 }
 
 .top-padding {
-	/*padding-top: 15%;*/
-	padding-top: 40%;
+	padding-top: 100vh;
+}
+
+.top-padding-extra {
+	padding-top: 120vh;
 }
 
 .bp-img {

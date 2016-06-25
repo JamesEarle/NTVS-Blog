@@ -10,7 +10,7 @@ $(document).ready(function () {
         ".overlay-half-down",
         ".overlay-half-up",
         ".headline-background",
-        ".headline-background-sm"
+        ".headline-background-lg"
     ];
 
     //for (var key in cssSelectors) {
