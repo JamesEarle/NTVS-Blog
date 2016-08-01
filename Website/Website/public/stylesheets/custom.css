@@ -94,7 +94,7 @@ hr {
 .container-full {
 	width: 100%;
 	background-color: #e0e0e0;
-	color: #374C59;
+	color: #374C59; /* font color to match JE logo */
 	padding: 0;
 	margin: 0;
 	min-height: 400px;
@@ -118,6 +118,7 @@ hr {
 	margin: 0 auto;
 }
 
+/* Background images for various pages. */
 .skyline {
 	background-image: url('/images/header-skyline.jpg');
 }
@@ -154,7 +155,7 @@ hr {
 
 .overlay-half-down {
 	height: 50vh;
-	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+	/*background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));*/
 }
 
 .overlay-half-up {
@@ -188,6 +189,24 @@ hr {
 	margin-top: 150px;
 	text-align: center;
 }
+
+.brand {
+    width: 26px;
+    height: 26px;
+}
+
+.navbar-header {
+    height: 50px;
+}
+
+ul.nav > li {
+    margin-bottom: 0px;
+}
+
+/* Override bootstrap default of 20px bottom margin.*/
+/*.navbar {
+    margin-bottom: 0px;
+}*/
 
 .square-lg {
 	width: 300px;
