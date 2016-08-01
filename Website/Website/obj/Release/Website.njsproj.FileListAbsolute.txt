@@ -1,2 +1,4 @@
 D:\Development\NodeJS\NTVS\NTVS-Blog\Website\Website\bin\Microsoft.NodejsTools.WebRole.dll
 D:\Development\NodeJS\NTVS\NTVS-Blog\Website\Website\obj\Release\Website.njsprojResolveAssemblyReference.cache
+C:\Users\jaearle\Documents\Code\NTVS-Blog\Website\Website\obj\Release\Website.njsprojResolveAssemblyReference.cache
+C:\Users\jaearle\Documents\Code\NTVS-Blog\Website\Website\bin\Microsoft.NodejsTools.WebRole.dll

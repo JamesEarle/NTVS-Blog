@@ -11,6 +11,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+
+// MySQL DB connection and setup.
 var mysql = require("mysql");
 
 var connection = mysql.createConnection({
