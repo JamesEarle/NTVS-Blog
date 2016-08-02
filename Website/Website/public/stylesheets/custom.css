@@ -10,7 +10,7 @@ body {
 	text-align: left;
 	color: white;
 	font-weight: normal;
-	letter-spacing: 5px;
+	letter-spacing: 4px;
 }
 
 .invisible {
@@ -60,7 +60,7 @@ a:before {
 }
 
 ul.options {
-	margin-left: -40px;
+	margin-left: -30px;
 }
 
 ul, li {
@@ -151,8 +151,10 @@ hr {
 .overlay {
 	height: 100vh;
 	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+    overflow-y: hidden;
 }
 
+/* Don't think we need this half overlay portions anymore */
 .overlay-half-down {
 	height: 50vh;
 	/*background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));*/
@@ -185,8 +187,12 @@ hr {
 	background-color: #7CB2A3;
 }
 
+.center {
+    text-align: center;
+}
+
 .middle {
-	margin-top: 150px;
+	margin-top: 180px;
 	text-align: center;
 }
 
@@ -195,22 +201,31 @@ hr {
     height: 26px;
 }
 
+/* Bootstrap overriding */
+.jumbotron {
+    margin-top: 12.5%;
+    color: #374C59;
+    width: 80%;
+    border-radius: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .navbar-header {
     height: 50px;
+}
+
+.navbar-brand {
+    height: 53px;
 }
 
 ul.nav > li {
     margin-bottom: 0px;
 }
 
-/* Override bootstrap default of 20px bottom margin.*/
-/*.navbar {
-    margin-bottom: 0px;
-}*/
-
 .square-lg {
-	width: 300px;
-	height: 300px;
+	width: 350px;
+	height: 350px;
 }
 
 .square-md {
@@ -225,6 +240,7 @@ ul.nav > li {
 
 .thin-margins {
 	margin: 20px;
+    padding-top: 20px;
 }
 
 @media screen and (max-height: 755px) {
