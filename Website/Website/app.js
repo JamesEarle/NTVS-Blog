@@ -61,11 +61,11 @@ if ('development' == app.get('env')) {
 // Add GET Requests
 app.get('/', routes.index);
 app.get('/about', routes.about);
-app.get('/work', routes.work);
+//app.get('/work', routes.work);
 app.get('/projects', routes.projects);
-app.get('/extras', routes.extras);
+//app.get('/extras', routes.extras);
 app.get('/contact', routes.contact);
-app.get('/resume', routes.resume);
+//app.get('/resume', routes.resume);
 app.get('/photos', routes.photos);
 app.get('/blog', routes.g_blog);
 

@@ -118,6 +118,10 @@ hr {
 	margin: 0 auto;
 }
 
+.no-padding {
+    padding: 0px;
+}
+
 /* Background images for various pages. */
 .skyline {
 	background-image: url('/images/header-skyline.jpg');
@@ -129,6 +133,11 @@ hr {
 
 .microsoft {
 	background-image: url('/images/header-microsoft.jpg');
+}
+
+.venice {
+    background-image: url('/images/header-venice.jpg');
+    background-position-y: -45%;
 }
 
 .headline-background {
@@ -151,7 +160,7 @@ hr {
 .overlay {
 	height: 100vh;
 	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
-    overflow-y: hidden;
+    overflow-y: hidden; /* Change this for narrow window sizes */
 }
 
 /* Don't think we need this half overlay portions anymore */
@@ -234,8 +243,9 @@ ul.nav > li {
 }
 
 .square-sm {
-	width: 250px;
-	height: 250px;
+	width: 210px;
+	height: 210px;
+    margin: 10px 0;
 }
 
 .thin-margins {

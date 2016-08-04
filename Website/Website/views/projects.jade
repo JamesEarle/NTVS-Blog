@@ -1,5 +1,21 @@
 ﻿extends layout
 
 block content
-  .row
-    .col-md-4 Here is some projects.
+    include ./includes/nav.jade
+    .headline-background.venice
+        .overlay
+            .jumbotron
+                .container
+                    h2.header Projects
+                    mixin project(img, alt)
+                        .col-md-3
+                            img(src='images/projects/'+img, alt=alt).square-sm.container.no-padding
+                    .row.center
+                        +project("cbh-logo-350x350.jpg", "Cross Border Housing")
+                        +project("csbreakdown-350x350.jpg", "CS Breakdown")
+                        +project("symbolic-regression.png", "Genetic Programming Portfolio")
+                        +project("relic-350x350.jpg", "Relic")
+                    .row.center
+                        +project("freeform-500x500.jpg", "Formulize")
+                        +project("chess-500x500.jpg", "Chess")
+                        +project("ms-logo.png", "Microsoft")
