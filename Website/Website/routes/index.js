@@ -2,8 +2,6 @@
 // res.render('index', { title: 'my title' });
 // to associate variables in Jade
 
-// test comment
-
 /*
  * GET Requests on all pages
  */
