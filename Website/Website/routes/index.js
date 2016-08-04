@@ -1,4 +1,8 @@
-﻿/*
+﻿// When passing parameters to pages use 
+// res.render('index', { title: 'my title' });
+// to associate variables in Jade
+
+/*
  * GET Requests on all pages
  */
 
@@ -15,11 +19,11 @@ exports.about = function (req, res) {
 }
 
 exports.work = function (req, res) {
-    res.render('work', { title: 'Work Experience' });
+    res.render('work');
 };
 
 exports.projects = function (req, res) {
-    res.render('projects', { title: 'Projects' });
+    res.render('projects');
 };
 
 exports.extras = function (req, res) {

@@ -91,6 +91,7 @@
     <Content Include="views\contact.jade" />
     <Content Include="views\extras.jade" />
     <Content Include="views\includes\headline-small.jade" />
+    <Content Include="views\includes\nav.jade" />
     <Content Include="views\index.jade" />
     <Content Include="views\layout.jade" />
     <Content Include="views\photos.jade" />

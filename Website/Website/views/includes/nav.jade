@@ -1,0 +1,23 @@
+﻿nav.navbar.navbar-inverse.navbar-fixed-top(role="navigation")
+        .container
+            .navbar-header
+                button(type="button" data-toggle="collapse" data-target="#navbar-james").navbar-toggle
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a(href="/").navbar-brand
+                    img(alt="Brand" src="images/je-logo-transparent.png").brand
+            .collapse.navbar-collapse#navbar-james
+                // Would be good to figure out how to add ".active" to li tags
+                ul.nav.navbar-nav
+                    li
+                        a(href="/about") About
+                    li
+                        a(href="/projects") Projects
+                    li
+                        a(href="/contact") Contact
+                    li
+                        a(href="/photos") Photos
+                    li
+                        a(href="/blog") Blog
