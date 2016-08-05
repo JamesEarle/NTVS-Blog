@@ -8,7 +8,9 @@ block content
                 .container
                     mixin project(img, alt)
                         .col-md-3
-                            img(src='images/projects/'+img, alt=alt).square-sm.container.no-padding.project
+                            .img-wrap.square-sm
+                                img(src='images/projects/'+img, alt=alt).square-sm.container.no-padding
+                                p.img-description.square-sm.container This image is super neat
                     .row.center
                         +project("cbh-logo-350x350.jpg", "Cross Border Housing")
                         +project("csbreakdown-350x350.jpg", "CS Breakdown")
