@@ -1,22 +1,6 @@
 ﻿extends layout
 
 block content
-  .jumbotron
-      h1 #{title}
-      h4.
-        Here you can check out some of my recent work. I've taken a big
-        interest in Node.js and the MEAN stack in general, so I've been
-        focusing a lot on improving my web skills overall. If you're at 
-        all interested in coffee or wine, I like to write about that as 
-        well! I'll be updating often with new work, projects, or
-        just expressing my opinion (yikes!), so stay tuned. 
-
-  hr
-  each p in posts
-    .row
-        .pull-left.col-md-2
-            img(src="images/ms-logo.png").bp-img
-        h2.bp-title= p.title
-        p= p.body
-        // be sure to only show a preview of each post, and then click for more detail
-    hr
+    include ./includes/nav.jade
+    .headline-background.forest
+        .overlay

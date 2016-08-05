@@ -1,16 +1,6 @@
 ﻿extends layout
 
-block grid
-  .grid-container
-    .am-container#am-container
-      - var n=0
-      while n<42
-        a(href="#").grid
-          figure
-            img(src="/images/grid/#{n++}.jpg").square-md
-  //script(src="/javascripts/automatic-montage.js")
-
-//.grid-item(onmouseover="mOver(this)", onmouseout="mOut(this)")
-        .textbox(onmouseover="mOver(this, true)", onmouseout="mOut(this, true)")
-            span DeltaHacks II - 2016
-        img(src="/images/grid/.png")
+block content
+    include ./includes/nav.jade
+    .headline-background.mountain
+        .overlay
