@@ -51,9 +51,11 @@ a:before {
   left: 0;
   background-color: white;
   visibility: hidden;
+  -o-transform: scaleX(0);
   -ms-transform: scaleX(0);
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
+  -o-transition: all 0.15s ease-in-out 0s;
   -moz-transition: all 0.15s ease-in-out 0s;
   -webkit-transition: all 0.15s ease-in-out 0s;
   transition: all 0.15s ease-in-out 0s;
@@ -212,7 +214,7 @@ hr {
 
 /* Bootstrap overriding */
 .jumbotron {
-    margin-top: 12.5%;
+    margin-top: 10%;
     color: #374C59;
     width: 80%;
     border-radius: 15px;
@@ -245,12 +247,25 @@ ul.nav > li {
 .square-sm {
 	width: 210px;
 	height: 210px;
-    margin: 10px 0;
+    margin: 10px 10px 30px 10px;
 }
 
 .thin-margins {
 	margin: 20px;
     padding-top: 20px;
+}
+
+.project {
+    transition: ease-in-out 0.1s;
+    -o-transition: ease-in-out 0.1s;
+    -moz-transition: ease-in-out 0.1s;
+    -webkit-transition: ease-in-out 0.1s;
+}
+
+.project:hover {
+    box-shadow: 0px 0px 6px 3px #777777;
+    -moz-box-shadow: 0px 0px 6px 3px #777777;
+    -webkit-box-shadow: 0px 0px 6px 3px #777777;
 }
 
 @media screen and (max-height: 755px) {

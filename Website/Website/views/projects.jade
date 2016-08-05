@@ -6,10 +6,9 @@ block content
         .overlay
             .jumbotron
                 .container
-                    h2.header Projects
                     mixin project(img, alt)
                         .col-md-3
-                            img(src='images/projects/'+img, alt=alt).square-sm.container.no-padding
+                            img(src='images/projects/'+img, alt=alt).square-sm.container.no-padding.project
                     .row.center
                         +project("cbh-logo-350x350.jpg", "Cross Border Housing")
                         +project("csbreakdown-350x350.jpg", "CS Breakdown")

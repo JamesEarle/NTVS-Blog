@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Content Include="bin\Microsoft.NodejsTools.WebRole.dll" />
     <Content Include="public\images\down-arrow-b.png" />
     <Content Include="public\images\down-arrow.png" />
     <Content Include="public\images\grid\0.jpg" />
@@ -157,6 +158,7 @@
     <Content Include="views\work.jade" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\" />
     <Folder Include="data\" />
     <Folder Include="data\diagnostic.data\" />
     <Folder Include="data\journal\" />
