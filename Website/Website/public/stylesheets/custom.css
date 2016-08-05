@@ -10,7 +10,7 @@ body {
 	text-align: left;
 	color: white;
 	font-weight: normal;
-	letter-spacing: 4px;
+	letter-spacing: 2px;
 }
 
 .invisible {
@@ -30,9 +30,9 @@ a {
 	overflow: hidden;
 }
 
-a:hover {
+/*a:hover {
 	color: #fff;
-}
+}*/
 
 a:hover:before {
 	visibility: visible;
@@ -51,18 +51,20 @@ a:before {
   left: 0;
   background-color: white;
   visibility: hidden;
+
+  transform: scaleX(0);
   -o-transform: scaleX(0);
   -ms-transform: scaleX(0);
   -webkit-transform: scaleX(0);
-  transform: scaleX(0);
+
+  transition: all 0.15s ease-in-out 0s;
   -o-transition: all 0.15s ease-in-out 0s;
   -moz-transition: all 0.15s ease-in-out 0s;
   -webkit-transition: all 0.15s ease-in-out 0s;
-  transition: all 0.15s ease-in-out 0s;
 }
 
 ul.options {
-	margin-left: -30px;
+	margin-left: -20px;
 }
 
 ul, li {
@@ -126,20 +128,32 @@ hr {
 
 /* Background images for various pages. */
 .skyline {
-	background-image: url('/images/header-skyline.jpg');
+	background-image: url('/images/headers/skyline.jpg');
 }
 
 .brock {
-	background-image: url('/images/header-brock.jpg');
+	background-image: url('/images/headers/brock.jpg');
 }
 
 .microsoft {
-	background-image: url('/images/header-microsoft.jpg');
+	background-image: url('/images/headers/microsoft.jpg');
 }
 
 .venice {
-    background-image: url('/images/header-venice.jpg');
+    background-image: url('/images/headers/venice.jpg');
     background-position-y: -45%;
+}
+
+.forest {
+    background-image: url('/images/headers/forest.jpeg');
+}
+
+.mountain {
+    background-image: url('/images/headers/mountain.jpeg');
+}
+
+.desert {
+    background-image: url('/images/headers/desert.jpg');
 }
 
 .headline-background {
@@ -250,11 +264,11 @@ ul.nav > li {
     margin: 10px 10px 30px 10px;
 }
 
-.img-wrap {
+/*.img-wrap {
     position: relative;
-}
+}*/
 
-.img-description {
+/*.img-description {
     position: absolute;
     padding-top: 35%;
     top:0;
@@ -271,18 +285,19 @@ ul.nav > li {
     -webkit-transition: ease-in-out 0.1s;
     opacity: 0;
     visibility: hidden;
-}
+}*/
 
-.img-wrap:hover .img-description {
+/*.img-wrap:hover .img-description {
   visibility: visible;
   opacity: 1;
-}
+}*/
 
 .thin-margins {
 	margin: 20px;
     padding-top: 20px;
 }
 
+/* Hover animations aren't mobile friendly. */
 .project {
     transition: ease-in-out 0.1s;
     -o-transition: ease-in-out 0.1s;
@@ -296,7 +311,7 @@ ul.nav > li {
     -webkit-box-shadow: 0px 0px 6px 3px #777777;
 }
 
-@media screen and (max-height: 755px) {
+/*@media screen and (max-height: 755px) {
 	.middle {
 		margin-top: 75px;
 	}
@@ -306,7 +321,7 @@ ul.nav > li {
 	.middle {
 		margin-top: 25px;
 	}
-}
+}*/
 
 @media screen and (max-width: 755px) {
 	.middle {
@@ -328,4 +343,48 @@ ul.nav > li {
 	body {
 		font-size: 0.8em;
 	}
+}
+
+/* Laptop */
+@media screen and (max-width: 1024px) {
+    .square-lg {
+        height: 275px;
+        width: 275px;
+    }
+
+    .square-sm {
+        height: 140px;
+        width: 140px;
+    }
+
+    .thin-margins {
+        padding-top: 0px;
+    }
+
+    .middle {
+        margin-top: 140px;
+    }
+}
+
+/* iPhone 6 */
+@media screen and (max-width: 375px) {
+    .skyline {
+        background-position-x: 15%;
+    }
+
+    .forest {
+        background-position-x: 35%;
+    }
+
+    .middle {
+        margin-top: 160px;
+    }
+
+    body {
+        font-size: 1.35em;
+    }
+
+    a:hover:before {
+	    visibility: hidden;
+    }
 }
