@@ -324,6 +324,10 @@ ul.nav > li {
 }*/
 
 @media screen and (max-width: 755px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
 	.middle {
 		height: 250px;
 		width: 250px;
@@ -335,6 +339,7 @@ ul.nav > li {
 }
 
 @media screen and (max-width: 668px) {
+
 	.middle {
 		height: 200px;
 		width: 200px;
@@ -366,8 +371,25 @@ ul.nav > li {
     }
 }
 
+/* iPhone 6+ Vertical */
+@media screen and (max-width: 414px) {
+    .square-lg {
+        height: 210px;
+        width: 210px;
+    }
+
+     .headline-background {
+        margin-top: 50px;
+    }
+}
+
 /* iPhone 6 */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px) {}
+    .square-lg {
+        height: 170px;
+        width: 170px;
+    }
+
     .skyline {
         background-position-x: 15%;
     }

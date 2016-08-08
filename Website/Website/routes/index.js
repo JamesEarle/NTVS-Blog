@@ -19,7 +19,7 @@ exports.projects = function (req, res) {
 };
 
 exports.contact = function (req, res) {
-    res.render('contact', { title: 'Contact' });
+    res.render('contact');
 };
 
 exports.photos = function (req, res) {
