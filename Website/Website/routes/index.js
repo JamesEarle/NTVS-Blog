@@ -6,6 +6,8 @@
  * GET Requests on all pages
  */
 
+//https://hexo.io/docs/
+
 exports.index = function (req, res) {
 	res.render('index');
 };
