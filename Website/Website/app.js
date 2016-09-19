@@ -19,16 +19,22 @@ var connection = mysql.createConnection({
     host : "localhost",
     user : "root",
     password : "", //secret
-    database : "ntvs_blog"
+    database : "ntvs_blog",
+    port : "3306"
 });
 
-connection.connect(function (err) {
-    if (err) {
-        console.error("Error connecting to MySQL! " + err.stack);
-        return
-    }
-});
+connection.connect();
 
+//connection.query("SELECT 1 + 1 AS solution", function (err, rows, fields) {
+//    if (err) {
+//        console.log("query fail")
+//        throw err
+//    } else {
+//        console.log("query success")
+//    }
+
+//    console.log("the solution is: ", rows[0].solution);
+//});
 
 // Get application routes and begin express
 var routes = require('./routes');
@@ -76,6 +82,3 @@ app.post('/blog', routes.p_blog);
 http.createServer(app).listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));
 });
-
-// For references on MongoDB connection, this tutorial is helpful
-// http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/

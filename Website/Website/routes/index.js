@@ -30,17 +30,14 @@ exports.photos = function (req, res) {
 
 // For the blog, we query MySQL and return blog posts
 exports.g_blog = function (req, res) {
-    var rows = req.connection.query("SELECT * FROM posts", function (err, rows, fields) {
+    req.connection.query("SELECT * FROM posts", function (err, rows, fields) {
         if (err) throw err
-        
+
         res.render('blog', {
             title: 'Blog',
             posts: rows
         });
     });
-    console.log("----------------");
-    console.log(rows);
-    console.log("----------------");
 };
 
 //exports.work = function (req, res) {

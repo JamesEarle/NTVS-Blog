@@ -4,3 +4,13 @@ block content
     include ./includes/nav.jade
     .headline-background.forest
         .overlay
+            h2 Here are the rows
+            ul
+                each p, i in posts
+                    ul
+                        li= p.pid
+                        li= p.title
+                        li= p.body
+                        li= p.date
+                else
+                    li No posts!
